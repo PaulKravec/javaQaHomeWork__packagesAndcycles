@@ -5,10 +5,10 @@ public class SQRService {
 
         int score = 0;
         for (int i = 10; i <= 99; i++) {
-            int square = i * i;
-            if (min <= square && square <= max) ;
-            {
-                score++;
+            if (i * i >= min){
+                if (i * i <= max) {
+                    score++;
+                }
             }
         }
         return score;
